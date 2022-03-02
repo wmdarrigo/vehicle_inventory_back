@@ -13,12 +13,10 @@ require('dotenv/config')
 app.use(bodyParser.json())
 
 //import routes
-const postsRoute = require('./routes/posts');
 const bikesRoute = require('./routes/bikes');
 const { application } = require('express');
 
 // middleware
-app.use('/posts', postsRoute)
 app.use('/bikes', bikesRoute)
 
 // routes
