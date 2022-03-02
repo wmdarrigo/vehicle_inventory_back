@@ -27,7 +27,7 @@ app.get('/', (req,res) => {
 }) 
 
 // connect to DB
-mongoose.connect(process.env.DB_CONNECTION)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('connected to DB!')
     }).catch(err => {
